@@ -22,4 +22,3 @@ R3 have provided comprehensive documentation on how to set up [Corda nodes](http
 4. Copy the jar files downloaded in step 1 into the `cordapps` directory.
 5. Restart the Corda node and and other required processes associated with the node.
 6. Once the node has restarted, you should be able to test the Marco Polo POC Vault Explorer using the url `http://<host-name>:<web-port-number>/web/tix`
-
