@@ -23,11 +23,11 @@ For the purpose of the following steps, `/opt/corda` is assumed as the location 
 2. Create migrations for the CorDapp state schemas
 
 ```
-/opt/corda$: sudo java -jar corda-tools-database-manager-3.1.jar --base-directory . --create-migration-sql-for-cordapp com.tradeix.concord.schemas.InvoiceSchemaV1
+/opt/corda/cordapps$: sudo java -jar ../corda-tools-database-manager-3.1.jar --base-directory /opt/corda --create-migration-sql-for-cordapp com.tradeix.concord.schemas.InvoiceSchemaV1
 ```
 
 ```
-/opt/corda$: sudo java -jar corda-tools-database-manager-3.1.jar --base-directory . --create-migration-sql-for-cordapp com.tradeix.concord.schemas.PurchaseOrderSchemaV1
+/opt/corda/cordapps$: sudo java -jar ../corda-tools-database-manager-3.1.jar --base-directory /opt/corda --create-migration-sql-for-cordapp com.tradeix.concord.schemas.PurchaseOrderSchemaV1
 ```
 
 3. Create a jar file for the schema migration
